@@ -1,0 +1,91 @@
+@import './variable/variables';
+@import './variable/helper';
+
+.card {
+    border: none
+}
+
+.product {
+    background-color: #eee
+}
+
+.brand {
+    font-size: 13px
+}
+
+.act-price {
+    color: red;
+    font-weight: 700
+}
+
+.dis-price {
+    text-decoration: line-through
+}
+
+.about {
+    font-size: 14px
+}
+
+.color {
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 2px 9px;
+    border: 2px solid $thirdColor;
+    display: inline-block;
+    border-radius: 3px;
+    text-transform: uppercase
+}
+
+label.radio input:checked+span {
+    border-color: $thirdColor;
+    background-color: $thirdColor;
+    color: #fff
+}
+
+.btn-danger {
+    background-color: $thirdColor !important;
+    border-color: $thirdColor !important;
+    &:hover{
+        background-color: $secondaryColor !important;
+        border-color: $thirdColor !important
+    }
+}
+
+// .btn-danger:hover {
+//     background-color: $thirdColor !important;
+//     border-color: $thirdColor !important
+// }
+
+.btn-danger:focus {
+    box-shadow: none
+}
+
+.cart i {
+    margin-right: 10px
+}
+.back-link{
+    @include links;
+}
+.slick-slider{
+background: $primaryColor;
+}
+.slick-dots li button:before {
+    font-size: 1rem !important;
+}
+.slick-prev:before, .slick-next:before{
+    color: $thirdColor !important;
+}
